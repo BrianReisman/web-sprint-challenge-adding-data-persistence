@@ -57,14 +57,11 @@ Build the migration(s) in Knex inside the `data/migrations` folder using appropr
 
 Build an API inside the `api` folder with endpoints for:
 
-- [ ] `[POST] /api/resources`
+<!-- - [ ] `[POST] /api/resources`
   - Example of response body: `{"resource_id":1,"resource_name":"foo","resource_description":null}`
 
 - [ ] `[GET] /api/resources`
-  - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
-
-
-
+  - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]` -->
 
 - [ ] `[POST] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
