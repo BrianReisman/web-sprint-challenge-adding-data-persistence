@@ -4,7 +4,7 @@ exports.up = function (knex) {
       tbl.increments("project_id");
       tbl.string("project_name").notNullable();
       tbl.string("project_description");
-      tbl.integer("project_completed"); //integer or boolean?
+      tbl.boolean("project_completed"); //boolean or boolean?
     })
     .createTable("resources", (tbl) => {
       tbl.increments("resource_id");
@@ -15,7 +15,7 @@ exports.up = function (knex) {
       tbl.increments("task_id");
       tbl.string("task_description").notNullable();
       tbl.string("task_notes");
-      tbl.integer("task_completed");
+      tbl.boolean("task_completed");
       tbl
         .integer("project_id")
         .notNullable()
