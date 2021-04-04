@@ -1,4 +1,4 @@
-# Adding Data Persistence Sprint Challenge
+<!-- # Adding Data Persistence Sprint Challenge
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -24,32 +24,32 @@ For a step-by-step on setting up Codegrade see [this guide.](https://www.notion.
 
 ### Introduction
 
-In this project you will be given a set of requirements and must design a database to satisfy them. As a part of this process you'll also build an API with endpoints to access the data.
+In this project you will be given a set of requirements and must design a database to satisfy them. As a part of this process you'll also build an API with endpoints to access the data. -->
 
 ### Required Tables
 
 Build the migration(s) in Knex inside the `data/migrations` folder using appropriate data types and constraints. **You must use the table names and the column names described below.** To give a primary key a name different than `id`, do `table.increments("project_id")` instead of `table.increments()`.
 
-- [ ] A **project** is what needs to be done and is stored in a `projects` table with the following columns:
+<!-- - [ ] A **project** is what needs to be done and is stored in a `projects` table with the following columns:
 
   - [ ] `project_id` - primary key
   - [ ] `project_name` - required
   - [ ] `project_description` - optional
-  - [ ] `project_completed` - the database defaults it to `false` (integer 0) if not provided
+  - [ ] `project_completed` - the database defaults it to `false` (integer 0) if not provided -->
 
-- [ ] A **resource** is anything needed to complete a project and is stored in a `resources` table with the following columns:
+<!-- - [ ] A **resource** is anything needed to complete a project and is stored in a `resources` table with the following columns:
 
   - [ ] `resource_id` - primary key
   - [ ] `resource_name` - required and unique
-  - [ ] `resource_description` - optional
+  - [ ] `resource_description` - optional -->
 
-- [ ] A **task** is one of the steps needed to complete a project and is stored in a `tasks` table with the following columns:
+<!-- - [ ] A **task** is one of the steps needed to complete a project and is stored in a `tasks` table with the following columns:
 
   - [ ] `task_id` - primary key
   - [ ] `task_description` - required
   - [ ] `task_notes` - optional
   - [ ] `task_completed` - the database defaults it to `false` (integer 0) if not provided
-  - [ ] `project_id` - required and points to an actual `project_id` in the `projects` table
+  - [ ] `project_id` - required and points to an actual `project_id` in the `projects` table -->
 
 - [ ] A **resource assignment** connects a resource and a project, and is stored in a `project_resources` table. You decide what columns to use.
 
@@ -63,6 +63,9 @@ Build an API inside the `api` folder with endpoints for:
 - [ ] `[GET] /api/resources`
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
+
+
+
 - [ ] `[POST] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
@@ -70,6 +73,9 @@ Build an API inside the `api` folder with endpoints for:
 - [ ] `[GET] /api/projects`
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
+
+
+
 
 - [ ] `[POST] /api/tasks`
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
@@ -80,6 +86,12 @@ Build an API inside the `api` folder with endpoints for:
   - Each task must include `project_name` and `project_description`
   - Example of response body: `[{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_name:"bar","project_description":null}]`
 
+
+
+
+
+
+
 **Notes:**
 
 - Run tests locally by executing `npm run test`.
@@ -89,7 +101,7 @@ Build an API inside the `api` folder with endpoints for:
 - Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work.
 - It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-### Stretch Goals
+<!-- ### Stretch Goals
 
 **IMPORTANT:** Do not break any MPV functionality by adding "stretch" code! Keep an eye on those tests!
 
@@ -106,7 +118,7 @@ After finishing your required elements, you can push your work further. These go
 - [ ] Please don't merge your own pull request and make sure **you are on your own repo**.
 - [ ] Check Codegrade for automated feedback.
 - [ ] Check Codegrade on Monday following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [ ] Any changes pushed after the deadline will not receive any feedback. -->
 
 ## Interview Questions
 
